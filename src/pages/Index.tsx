@@ -42,9 +42,9 @@ const Index = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background asian-pattern">
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center px-6 py-20 overflow-hidden">
+      <section className="relative min-h-screen flex items-center justify-center px-6 py-20 overflow-hidden asian-wave">
         <div className="absolute inset-0 bg-gradient-to-b from-accent/10 via-transparent to-transparent"></div>
         
         <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center z-10">
@@ -242,7 +242,7 @@ const Index = () => {
             Есть, что поесть — когда важно произвести <span className="text-accent neon-text">впечатление</span>.
           </h2>
           
-          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
+          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center flex-wrap">
             <Button 
               size="lg"
               className="text-lg px-10 py-7 bg-accent hover:bg-accent/90 text-accent-foreground neon-glow font-semibold"
@@ -250,6 +250,18 @@ const Index = () => {
             >
               <Icon name="Send" size={20} className="mr-2" />
               Написать в Telegram
+            </Button>
+
+            <Button 
+              size="lg"
+              className="text-lg px-10 py-7 bg-[#0077FF] hover:bg-[#0077FF]/90 text-white font-semibold"
+              style={{ boxShadow: '0 0 20px rgba(0, 119, 255, 0.6), 0 0 40px rgba(0, 119, 255, 0.4)' }}
+              onClick={() => window.open('https://vk.com/yourpage', '_blank')}
+            >
+              <svg className="w-5 h-5 mr-2" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M15.07 2H8.93C3.33 2 2 3.33 2 8.93v6.14C2 20.67 3.33 22 8.93 22h6.14c5.6 0 6.93-1.33 6.93-6.93V8.93C22 3.33 20.67 2 15.07 2zm3.13 14.25h-1.41c-.69 0-.9-.56-2.14-1.81-1.08-1.05-1.56-1.19-1.83-1.19-.37 0-.48.11-.48.64v1.65c0 .45-.14.72-1.33.72-1.99 0-4.21-1.21-5.76-3.46-2.33-3.27-2.97-5.74-2.97-6.24 0-.27.11-.52.64-.52h1.41c.48 0 .66.22.85.73.98 2.84 2.62 5.31 3.29 5.31.26 0 .37-.12.37-.76v-2.99c-.09-1.49-.87-1.62-.87-2.15 0-.22.18-.43.47-.43h2.21c.4 0 .55.22.55.7v4.02c0 .4.18.55.29.55.26 0 .47-.15.95-.63 1.46-1.65 2.51-4.19 2.51-4.19.14-.29.36-.52.85-.52h1.41c.5 0 .61.26.5.7-.17 1.15-2.49 4.59-2.49 4.59-.21.35-.29.5 0 .89.21.29.9.88 1.36 1.42.84.92 1.49 1.69 1.66 2.23.18.54-.09.81-.59.81z"/>
+              </svg>
+              Написать ВКонтакте
             </Button>
             
             <Button 
